@@ -11,5 +11,11 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
+- task: Bash@3
   displayName: 'First Sample'
-  - bash: 'echo running pipeline'  # contents of the script to run
+  inputs:
+    targetType: 'inline'
+    script: |
+      # Write your commands here
+      
+      echo 'Hello world'
