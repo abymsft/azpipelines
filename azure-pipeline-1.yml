@@ -19,3 +19,15 @@ steps:
       # Write your commands here
       
       echo 'Hello world'
+
+- task: ManualIntervention@8
+  inputs:
+    instructions: 'manual intervention instructions'
+    emailRecipients: 'abishek.narayan@microsoft.com'
+
+- task: ManualValidation@0
+  timeoutInMinutes: 1440 # task times out in 1 day
+  inputs:
+    notifyUsers: 'abishek.narayan@microsoft.com'
+    instructions: 'Test'
+    onTimeout: 'resume'
