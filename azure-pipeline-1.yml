@@ -17,12 +17,13 @@ stages:
           targetType: 'inline'
           script: |
             # Write your commands here
+            | echo 'Hello World'
   - job: A2
     pool: server
     steps:
       - task: ManualValidation@0
         timeoutInMinutes: 2
         inputs:
-          notifyUsers: 'abishek.narayan@microsoft.com'
+          notifyUsers: 'abnaraya@microsoft.com'
           instructions: 'check output in logs'
           onTimeout: reject
