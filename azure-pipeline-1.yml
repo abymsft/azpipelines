@@ -17,7 +17,6 @@ stages:
           targetType: 'inline'
           script: |
             # Write your commands here
-
   - job: A2
     pool: server
     steps:
