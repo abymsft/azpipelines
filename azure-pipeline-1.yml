@@ -25,5 +25,5 @@ steps:
   timeoutInMinutes: 1440 # task times out in 1 day
   inputs:
     notifyUsers: 'abishek.narayan@microsoft.com'
-    instructions: 'Test'
+    instructions: 'check the output'
     onTimeout: 'resume'
