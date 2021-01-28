@@ -20,4 +20,7 @@ steps:
       
       echo 'Hello world'
 
-
+- task: ManualValidation@0
+  inputs:
+    notifyUsers: 'abishek.narayan@microsoft.com'
+    instructions: 'check output in logs'
