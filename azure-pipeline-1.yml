@@ -21,6 +21,8 @@ stages:
     pool: server
     steps:
       - task: ManualValidation@0
+        timeoutInMinutes: 2
         inputs:
           notifyUsers: 'abishek.narayan@microsoft.com'
           instructions: 'check output in logs'
+          onTimeout: reject
