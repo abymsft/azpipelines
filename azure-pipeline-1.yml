@@ -11,13 +11,13 @@ stages:
     pool:
       vmImage: ubuntu-16.04
       steps:
-      - task: Bash@3
-        displayName: 'First Sample'
+      - task: CmdLine@2
         inputs:
-          targetType: 'inline'
-          script: |
-            # Write your commands here
-            | echo 'Hello World'
+            script: |
+              echo 'Write your commands here'
+              echo 'Hello world'
+- stage: B
+  jobs:
   - job: A2
     pool: server
     steps:
