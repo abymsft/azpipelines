@@ -21,9 +21,3 @@ steps:
       echo 'Hello world'
 
 
-- task: ManualValidation@0
-  timeoutInMinutes: 1440 # task times out in 1 day
-  inputs:
-    notifyUsers: 'abishek.narayan@microsoft.com'
-    instructions: 'check the output'
-    onTimeout: 'resume'
